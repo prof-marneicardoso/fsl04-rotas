@@ -1,12 +1,19 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import Navbar from "../components/Navbar";
 
 export default function Contato() {
     return (
-        <div>
-            <h1>Contato</h1>
+        <>
+            <Header />
+            <Navbar />
+            <Main>
+                <h1>Contato</h1>
 
-            <h3>Entre em contato</h3>
+                <h3>Entre em contato</h3>
 
-            <form>
+                <form>
                 <label>Nome</label>
                 <input type="text" />
 
@@ -21,6 +28,8 @@ export default function Contato() {
                 <br /><br />
                 <button type="submit">Enviar Mensagem</button>
             </form>
-        </div>
+            </Main>
+            <Footer />
+        </>
     );
 }
